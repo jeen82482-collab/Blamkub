@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancha Font - Link in Bio</title>
+    <!-- นำเข้าฟอนต์ลายมือน่ารักๆ จาก Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Itim', cursive, sans-serif;
+        }
+
+        body {
+            background-color: #fdfbf7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #5d4037;
+        }
+
+        /* จำลองกรอบหน้าจอมือถือ */
+        .phone-container {
+            width: 100%;
+            max-width: 412px;
+            background: #ffffff;
+            min-height: 100vh;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            overflow-y: auto;
+            position: relative;
+            padding-bottom: 40px;
+        }
+
+        /* ส่วนหัวแบนเนอร์ */
+        .header-banner {
+            width: 100%;
+            padding: 15px;
+        }
+
+        .banner-img {
+            width: 100%;
+            height: auto;
+            border-radius: 24px;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* ส่วนโปรไฟล์และชื่อร้าน */
+        .profile-section {
+            text-align: center;
+            padding: 10px 20px 20px 20px;
+        }
+
+        .badge-owner {
+            background-color: #ffebee;
+            color: #d32f2f;
+            font-size: 13px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .profile-name {
+            font-size: 24px;
+            color: #3e2723;
+            margin-bottom: 2px;
+        }
+
+        .profile-sub {
+            font-size: 16px;
+            color: #8d6e63;
+        }
+
+        /* กล่องเมนูปุ่มกด */
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            padding: 0 20px;
+        }
+
+        .link-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 20px 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #5d4037;
+            box-shadow: 0 4px 12px rgba(245, 222, 179, 0.4);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #fffdf9;
+        }
+
+        .link-card:active {
+            transform: scale(0.98);
+        }
+
+        /* วงกลมไอคอนพาสเทล */
+        .icon-wrapper {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+
+        /* สีไอคอนแยกตามปุ่ม */
+        .bg-pink { background-color: #ffebee; color: #e91e63; }
+        .bg-green { background-color: #e8f5e9; color: #4caf50; }
+        .bg-yellow { background-color: #fffde7; color: #fbc02d; }
+        .bg-orange { background-color: #fff3e0; color: #ff9800; }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 4px;
+            color: #4e342e;
+        }
+
+        .card-subtitle {
+            font-size: 13px;
+            color: #a1887f;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="phone-container">
+        
+        <!-- ส่วนรูปภาพแบนเนอร์ด้านบน (เปลี่ยน URL รูปภาพตรง src) -->
+        <div class="header-banner">
+            <img class="banner-img" src="https://unsplash.com" alt="Banner">
+        </div>
+
+        <!-- ส่วนชื่อและฟอนต์ -->
+        <div class="profile-section">
+            <span class="badge-owner">🍓 BY ANCHA 🍓</span>
+            <h1 class="profile-name">Ancha font</h1>
+            <p class="profile-sub">อันชาฟอนต์</p>
+        </div>
+
+        <!-- โซนปุ่มกดแบบตาราง 2 คอลัมน์ -->
+        <div class="links-grid">
+            
+            <!-- ปุ่มที่ 1: All Product (ใส่ลิงก์ของคุณที่ href) -->
+            <a href="#" class="link-card">
+                <div class="icon-wrapper bg-grean"></div>
+                <div class="card-title">All product</div>
+                <div class="card-subtitle">สินค้าทั้งหมด</div>
+            </a>
+
+            <!-- ปุ่มที่ 2: Contact -->
+            <a href="#" class="link-card">
+                <div class="icon-wrapper bg-green">⭐</div>
+                <div class="card-title">Contact</div>
+                <div class="card-subtitle">ช่องทางการติดต่อ</div>
+            </a>
+
+     
+
+            <!-- ปุ่มที่ 4: Payment -->
+            <a href="#" class="link-card">
+                <div class="icon-wrapper bg-orange">💳</div>
+                <div class="card-title">- • + :Payment ♡</div>
+                <div class="card-subtitle">ช่องทางการโอน</div>
+            </a>
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="brand"><div class="heart">♡ ✧ ♡</div><h1>Botying Payment</h1><p>ช่องทางการชำระเงิน · ขอบคุณที่สนับสนุนร้านของเรา</p></header>
+  <section class="panel">
+    <h2>เลขบัญชีตามนี้เลยค้าบ</h2>
+    <p class="sub">ชื่อบัญชี <span class="account-name">วีร์ธิดา</span> เท่านั้นน้า!!<br>ไม่มีบัญชีอื่นค่ะ สามารถ Save รูปไปสแกนได้เลยนะคะ</p>
+    <div class="notice">♡ โอนแล้วแจ้งสลิปได้เลยค้าบ<br><strong>กดเข้ากลุ่มแจ้งสลิปได้เลยค้าบ</strong></div>
+    <div class="section-label">⌄  รับปุ่มเพื่อคัดลอกเลขบัญชีได้เลยค้าบ  ⌄</div>
+    <div class="pay-card">
+      <div class="bank-icon">K+</div><div class="detail"><small>กสิกรไทย (วีร์ธิดา)</small><div class="number">1653779972</div></div>
+      <button class="copy" data-copy="1653779972">▢ คัดลอก</button>
+    </div>
+    <div class="pay-card wallet">
+      <div class="bank-icon">W</div><div class="detail"><small>วอลเลท (วีร์ธิดา)</small><div class="number">061216751</div></div>
+      <button class="copy" data-copy="061216751">▢ คัดลอก</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
